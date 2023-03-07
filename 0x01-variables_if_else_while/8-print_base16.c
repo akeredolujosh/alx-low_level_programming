@@ -1,28 +1,17 @@
 #include <stdio.h>
-
 /**
- * main - prints all the numbers of base 16 in lowercase,
- * followed by a new line
- * Return: Always 0 (Success)
+ * main-program entry point.
+ * Return: 0 if no error, non zero if error.
  */
-
 int main(void)
 {
-	int n;
-        char ch;
+	int i;
+	char hexvalues[] = "0123456789abcdef";
 
-        for (n = 48; n < 58; n++)
-        {
-                putchar(n);
-        }
-	for (ch = 'a'; ch <= 'f'; ch++)
-
-        {
-                putchar(ch);
-        }
-        putchar('\n');
-
-        return (0);
+	for (i = 0; i < 16; i++)
+	{
+		putchar(hexvalues[i]);
+	}
+	putchar('\n');
+	return (0);
 }
-
-

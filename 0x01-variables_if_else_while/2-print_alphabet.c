@@ -1,21 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase,
- * followed by a new line
- * Return: Always 0 (Success)
- */
+ *main-program entry point.
+ *Return:0 if no error, non zero if error.
+ **/
 int main(void)
-
 {
-       	char ch;
+	char i;
 
-       	for (ch = 'a'; ch <= 'z'; ch++)
-       	{
-	       	putchar(ch);
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		putchar(i);
 	}
 	putchar('\n');
-
-        return (0);
-
+	return (0);
 }
